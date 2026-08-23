@@ -1,4 +1,4 @@
-Cython>=3.2.9
+Cython>=3.0.12
 hdf5storage>=0.2.2
 hickle>=5.0.3
 h5py>=3.16.0
