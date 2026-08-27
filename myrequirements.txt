@@ -1,0 +1,14 @@
+Cython
+hdf5storage
+hickle
+h5py
+ipython
+matplotlib
+neo
+networkx
+numpy
+pandas
+PyQt5
+regex
+scipy
+seaborn
