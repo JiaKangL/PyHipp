@@ -8,8 +8,8 @@ find mountains -name "firings.mda" | wc -l
 
 echo "#==========================================================="
 echo "Start Times"
-head -n 1 rplpl-slurm*.out rplspl-slurm*.out
+head -n 1 *.out
 
 echo "End Times"
-tail -n 5 rplpl-slurm*.out rplspl-slurm*.out
+tail -n 5 *.out
 echo "#==========================================================="
