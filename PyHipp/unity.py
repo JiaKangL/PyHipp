@@ -88,8 +88,9 @@ class Unity(DPT.DPObject):
             self.durationDiff = []
 
             # load the rplparallel object to get the Ripple timestamps
-            rl = RPLParallel()
-            self.timeStamps = [rl.timeStamps]
+            # rl = RPLParallel()
+            # self.timeStamps = [rl.timeStamps]
+            self.timeStamps = []
 
             os.chdir(glob.glob(self.args["DirName"])[0])
             # look for session_1_*.txt in RawData_T*
@@ -236,12 +237,12 @@ class Unity(DPT.DPObject):
                 trial_durations = end_time - start_time
 
                 duration_diff = None
-                try:
-                    rp_trial_dur = rl.timeStamps[:, 2] - rl.timeStamps[:, 0]
+                # try:
+                #     rp_trial_dur = rl.timeStamps[:, 2] - rl.timeStamps[:, 0]
                     # multiply by 1000 to convert to ms
-                    duration_diff = (trial_durations - rp_trial_dur) * 1000
-                except:
-                    print('problem with timeStamps')
+                #     duration_diff = (trial_durations - rp_trial_dur) * 1000
+                # except:
+                #     print('problem with timeStamps')
 
                 self.durationDiff = [duration_diff]
                 self.trialRouteRatio = [ratio_each_trial_route]
